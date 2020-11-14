@@ -7,6 +7,38 @@ using namespace std;
 //     cout << "Hello " << name << " you are " << age << endl;
 // }
 
+//switch statement--------------------------------------
+// string getDayOfWeek(int dayNum){
+//     string dayName;
+//     switch(dayNum){
+//         case 0:
+//         dayName = "Sunday";
+//         break;
+//         case 1:
+//         dayName = "Monday";
+//         break;
+//         case 2:
+//         dayName = "Tuesday";
+//         break;
+//         case 3:
+//         dayName = "Wednesday";
+//         break;
+//         case 4:
+//         dayName = "Thursday";
+//         break;
+//         case 5:
+//         dayName = "Friday";
+//         break;
+//         case 6:
+//         dayName = "Saturday";
+//         break;
+//         default:
+//         dayName = "invalid day number";
+//     }
+
+//     return dayName;
+// }
+
 //return statement--------------------------------------
 // double cube(double num){
 //     double result = num * num * num;
@@ -24,6 +56,17 @@ using namespace std;
     //     }
     //     return result;
     // }
+
+//exponent function--------------------------------------
+// int power(int baseNum, int powNum){
+//     int result = 1;
+//     for (int i = 0; i < powNum; i++)
+//     {
+//         result = result * baseNum;
+//     }
+    
+//     return result;
+// }
 
 int main()
 {
@@ -51,27 +94,104 @@ int main()
     // cout << getMax(200,200,10);
 
 //better calculator--------------------------------------
-int num1, num2;
-char op;
-cout << "Enter first number: ";
-cin >> num1;
-cout << "Enter operator: ";
-cin >> op;
-cout << "Enter second number: ";
-cin >> num2;
-int result;
-if (op == '+'){
-    result = num1 + num2;
-}else if (op == '-'){
-    result = num1 - num2;
-}else if (op == '*'){
-    result = num1 * num2;
-} else if (op == '/'){
-    result = num1 / num2;
-} else {
-    cout << "Invalid operator";
-}
-cout << "Answer is : " << result;
+// int num1, num2;
+// char op;
+// cout << "Enter first number: ";
+// cin >> num1;
+// cout << "Enter operator: ";
+// cin >> op;
+// cout << "Enter second number: ";
+// cin >> num2;
+// int result;
+// if (op == '+'){
+//     result = num1 + num2;
+// }else if (op == '-'){
+//     result = num1 - num2;
+// }else if (op == '*'){
+//     result = num1 * num2;
+// } else if (op == '/'){
+//     result = num1 / num2;
+// } else {
+//     cout << "Invalid operator";
+// }
+// cout << "Answer is : " << result;
+
+//switch statement--------------------------------------
+// cout << getDayOfWeek(6);
+//while statement--------------------------------------
+    // int index = 1;
+    // while(index <= 5){
+    //     cout << index << endl;
+    //     index++;
+    // }
+
+    // int index = 6;
+    // do{
+    //     cout << index << endl;
+    //     index++;
+    // }while(index <= 5);
+//guessing game--------------------------------------
+    // int secretNum = 7;
+    // int guess;
+    // int guessCount = 0;
+    // int guessLimit = 3;
+    // bool outOfGuesses = false;
+    // while(secretNum != guess && !outOfGuesses){
+    //     if(guessCount < guessLimit){
+    //         cout << "Enter guess number: ";
+    //         cin >> guess;
+    //         guessCount++;
+    //     }else{
+    //         outOfGuesses = true;
+    //     }
+        
+    // }
+    // if(outOfGuesses){
+    //     cout << "You Lose";
+    // } else {
+    // cout << "You win!";
+    // }
+//for loop--------------------------------------
+// int index = 1;
+// while (index <= 5)
+// {
+//     cout << index << endl;
+//     index++;
+// }
+// is equal to 
+    // for(int i = 1;i <= 5;i++){
+    //     cout << i << endl;
+    // }
+
+    // int nums[] = {1,2,5,7,3};
+    // for(int i = 0;i < 5;i++){
+    //         cout << nums[i] << endl;
+    //     }
+//exponent function--------------------------------------
+    // cout << power(4,4);
+//2d and nested for loops--------------------------------------
+// int numberGrid[3][2] = {
+//     {1,2},
+//     {3,4},
+//     {5,6}
+// };
+// for (int i = 0; i < 3; i++)
+// {
+//     for (int j = 0; j < 2; j++)
+//     {
+//         cout << numberGrid[i][j] << endl;
+//     }
+//     cout << endl;
+// } 
+//pointers-where in RAM it is stored-----------------------
+int age = 19;
+int *pAge = &age;
+double gpa = 2.4;
+string name = "Mike";
+cout << "Age: " << &age << endl;
+cout << "GPA: " << &gpa << endl;
+cout << "Name: " << &name << endl;
+cout << pAge;
 
 
    return 0;
