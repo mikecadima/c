@@ -68,6 +68,32 @@ using namespace std;
 //     return result;
 // }
 
+//classes and objects--------------------------------------
+    // class Book {
+    //     public:
+    //         string title;
+    //         string author;
+    //         int pages;
+    // };
+
+//constructor functions--------------------------------------
+    // class Book {
+    //     public:
+    //         string title;
+    //         string author;
+    //         int pages;
+    //         Book(){
+    //             title = "no title";
+    //             author = "no author";
+    //             pages = 0;
+    //         }
+    //         Book(string aTitle,string aAuthor, int aPages){
+    //             title = aTitle;
+    //             author = aAuthor;
+    //             pages = aPages;
+    //         }
+    // };
+
 int main()
 {
     // sayHi("Mike", 60);
@@ -184,14 +210,33 @@ int main()
 //     cout << endl;
 // } 
 //pointers-where in RAM it is stored-----------------------
-int age = 19;
-int *pAge = &age;
-double gpa = 2.4;
-string name = "Mike";
-cout << "Age: " << &age << endl;
-cout << "GPA: " << &gpa << endl;
-cout << "Name: " << &name << endl;
-cout << pAge;
+// int age = 19;
+// int *pAge = &age;
+// double gpa = 2.4;
+// string name = "Mike";
+// cout << "Age: " << &age << endl;
+// cout << "GPA: " << &gpa << endl;
+// cout << "Name: " << &name << endl;
+// cout << pAge;
+// //dereferernce pointer and get addr
+// cout << *pAge;
+// cout << &*pAge;
+//classes and objects--------------------------------------
+    // Book book1;
+    // book1.title = "Harry Potter";
+    // book1.author = "JK Rowling";
+    // book1.pages = 500;
+    // Book book2;
+    //  book2.title = "Lord of the Rings";
+    // book2.author = "Tolkein";
+    // book2.pages = 700;
+    // cout << book2.title << book2.pages << endl;
+//constructor functions-using class from classes and objs------
+//     Book book1("Harry Potter", "JK Rowling",500);
+//     Book book2("Lord of the Rings","Tolkein",700);
+//     Book book3;
+//    cout << book3.title;
+
 
 
    return 0;
